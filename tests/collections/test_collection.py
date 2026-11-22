@@ -1,6 +1,6 @@
 import unittest
 
-from src.collections.collection_impl import Collection
+from src.collections.collection import Collection
 
 
 class TestCollection(unittest.TestCase):

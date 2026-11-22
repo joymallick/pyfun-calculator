@@ -5,27 +5,27 @@ def main():
     c1 = Calculator()
     c2 = Calculator()
     # 
-    # print("same Calculator instance" if (id(c1) == id(c2)) else "different Calculator instances")
+    #print("same Calculator instance" if (id(c1) == id(c2)) else "different Calculator instances")
     if (id(c1) == id(c2)):
         print("same Calculator instance: c1==c2")
     else:
         print("different Calculator instances: c1 != c2")
     # 
     print(f'{next()}: c1.add(1, 2)\t-> {c1.add(1, 2)}')
-    print(f'{next()}: c2.add(8, 3)\t-> {c2.add(8, 3)}')
-    # print(f'{next()}: c1.add("1", "1")\t-> {c1.add("1", "1")}')     # <-- uncomment
-    # print(f'{next()}: c1.add("X", "V")\t-> {c1.add("X", "V")}')
-    # print(f'{next()}: c2.factorize(99)\t-> {c1.factorize(99)}')
+    print(f'{next()}: c2.sub(8, 3)\t-> {c2.sub(8, 3)}')
+    print(f'{next()}: c1.add("1", "1")\t-> {c1.add("1", "1")}')     # <-- uncomment
+    print(f'{next()}: c1.add("X", "V")\t-> {c1.add("X", "V")}')
+    print(f'{next()}: c2.factorize(99)\t-> {c1.factorize(99)}')
     # # 
-    # print(f'{next()}: c1.add("1", "1.600")\t-> {c1.add("1", "1.600")}')
-    # print(f'{next()}: c1.add("three", "1.600")\t-> {c1.add("three", "1.600")}')
-    # print(f'{next()}: c1.add("cinco", "siete")\t-> {c1.add("cinco", "siete")}')
-    # print(f'{next()}: c1.add("семь", "восемь")\t-> {c1.add("семь", "восемь")}')
-    # print(f'{next()}: c1.add("III", "   VIII")\t-> {c1.add("III", "   VIII")}')
-    # print(f'{next()}: c1.add("三", "五")\t\t-> {c1.add("三", "五")}')
+    print(f'{next()}: c1.add("1", "1.600")\t-> {c1.add("1", "1.600")}')
+    print(f'{next()}: c1.add("three", "1.600")\t-> {c1.add("three", "1.600")}')
+    print(f'{next()}: c1.add("cinco", "siete")\t-> {c1.add("cinco", "siete")}')
+    print(f'{next()}: c1.add("семь", "восемь")\t-> {c1.add("семь", "восемь")}')
+    print(f'{next()}: c1.add("III", "   VIII")\t-> {c1.add("III", "   VIII")}')
+    print(f'{next()}: c1.add("三", "五")\t\t-> {c1.add("三", "五")}')
 
     # set True to run the examples from the expression list
-    _run_list=False
+    _run_list=True
     expr=[
         'c1.add("1", "1.600")',         # 2.6
         'c1.add("three", "1.600")',     # 4.6
@@ -50,7 +50,7 @@ def main():
         'c2.factorize(100000039)',      # [100000039] (prime number)
         '',
     ] if _run_list else []
-    # 
+     
     for i in range(len(expr)):
         e = expr[i].strip()
         if len(e) > 0:
