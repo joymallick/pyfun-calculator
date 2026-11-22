@@ -51,3 +51,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+
+# macOS files
+.DS_Store
