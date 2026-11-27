@@ -2,5 +2,5 @@
 # first time from another module. It is good practice to not include logic
 # in __init__.py, but what is exported from the package.
 # 
-from .calculator import Calculator
-from .collections import Collection, main
+from .calculator import Calculator, main
+from .collections import Collection
